@@ -5,41 +5,158 @@
     <meta name = "viewport" content="width-device-width, inital-scale = 1.-">
     <title>Portfolio</title>
     <link rel="stylesheet" href = "style.css">
-
+    <link rel="icon" type="image/x-icon" href="/images/logo4.png">
+    <script src="portfolio.js"></script>
 </head>
 <body>
+<!-----------Header----------------->
 
 <div id="header">
     <div class = "container">
         <nav>
             <img src = "images/logo4.png" id ="logo">
+            
             <ul>
                 <li> <a href="#">Home</a> </li>
                 <li> <a href="#">About</a> </li>
                 <li> <a href="#">Projects</a> </li>
                 <li> <a href="#">Contact</a> </li>
-
+                
             </ul>
         </nav>
     </div>
-
+    
     <div class="container">
         <nav>
-            <img src = "images/portrait.jpg" id ="portrait"/>
+            <img src = "images/ronald.gif" id ="portrait">
+
+
             <div class = "header-text">
                 <h1>Aaron Giang</h1>
-                <p>Software Engineer</p>
+                <p>Software Engineering Student</p>
+
             </div>
         </nav>
     </div>
 
 </div>
 
-
+<!-----------about----------------->
 <div id="about">
-    
+    <div class="container">
+        <h1 class=  "sub-title">About Me</h1>
+
+        <div class = "row">
+            <div class = "about-col-1">
+                <img src="images/portrait.jpg" id ="portrait2">
+            </div>
+
+            <div class = "about-col-2">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Amet nisl purus in mollis. Volutpat 
+                    lacus laoreet non curabitur gravida arcu. Aliquam 
+                    malesuada bibendum arcu vitae elementum. Dignissim 
+                    convallis aenean et tortor at risus viverra adipiscing 
+                    at. Quisque id diam vel quam elementum pulvinar etiam non 
+                    quam. Interdum consectetur libero id faucibus nisl tincidunt 
+                    eget. Quam quisque id diam vel quam elementum. Facilisis sed odio
+                     morbi quis commodo odio aenean sed.
+                     Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
+                </p>
+
+                <div class = "tab-titles"> 
+                    <p class = "tab-links active-link" onclick="opentab('languages')" id = "languagesTab">Languages</p>
+                    <p class = "tab-links" onclick="opentab('frameworks')" id = "frameworksTab">Frameworks</p>
+                    <p class = "tab-links" onclick="opentab('education')" id = "educationTab">Education</p>
+
+
+                </div>
+<!-----------Skills info----------------->
+
+                <div class="tab-contents active-tab" id="languages">
+                    <ul>
+
+                        <li><span>Python</span><br>Designing web/app</li>
+                        <li><span>C/C++/C#</span><br>Designing web/app</li>
+                    </ul>
+
+                </div>
+<!-----------Experience info----------------->
+
+                <div class="tab-contents " id ='frameworks'>
+                    <ul>
+
+                        <li><span>UI/UX</span><br>Designing web/app</li>
+                        <li><span>UI/UX</span><br>Designing web/app</li>
+                    </ul>
+
+                </div>
+<!-----------Education info----------------->
+
+                <div class="tab-contents " id = 'education'>
+                    <ul>
+
+                        <li><span>UI/UX</span><br>Designing web/app</li>
+                        <li><span>UI/UX</span><br>Designing web/app</li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
 </div>
 
+<!-----------Portfolio----------------->
+
+<div id = "portfolio">
+    <div class="container">
+        <h1 class ="sub-title">Projects</h1>
+        <div class="work-list">
+
+            <div class="work">
+                
+                
+                <a href="https://gunplapricechecker.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="layer" >
+                        <h3>Gunpla Price Checker</h3>
+                        <h5>Personal Project</h5>
+                        <p>
+                            A web app for checking the base price of gundam model kits.
+                        </p>
+                    </div>
+                    <img src="images/work-1.png" alt="" >
+                </i></a>
+            </div>
+
+            
+            <div class="work">
+                
+                <a href="https://devpost.com/software/voltvillage" target="_blank" rel="noopener noreferrer">
+                        <div class="layer" >
+                        <h3>VoltVillage</h3>
+                        <h5>Hack the Change 2023 Project</h5>
+                        <p>Concept for a decentralized the energy market.</p>
+                    </div>
+                    
+                    <img src="images/work-2.png" alt="" >
+                </i></a>
+            </div>
+
+            
+    
+
+
+        </div>
+    </div>
+</div>
 
 
 </body>
