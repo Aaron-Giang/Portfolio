@@ -232,3 +232,34 @@ nav ul li a:hover::after{
     width: 48px;
 }
 
+
+/*------------portfolio------------*/
+#contact{
+    padding: 80px 0;
+
+    background-color: #302e35;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 65%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p {
+    color: #5f21f1;
+    margin-right: 15;
+    font-size: 25px;
+}
+
+
+.social-icons {
+    padding: 10px;
+}
+
+.social-icons img:hover{
+    transform: translateY(-5px);
+}
