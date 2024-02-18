@@ -20,6 +20,12 @@ body{
 #logo{
     width: 120px;
     padding: 10px;
+    transition: 10s;
+}
+
+#logo:hover{
+    background-color: #000000;
+    border-radius: 200px;
 }
 
 .container{
@@ -262,4 +268,46 @@ nav ul li a:hover::after{
 
 .social-icons img:hover{
     transform: translateY(-5px);
+}
+
+/*------------game------------*/
+#game{
+    text-align: center;
+    display: none;
+    padding: 40px;
+    margin-bottom: 200px;
+}
+
+#progressBar {
+    width: 90%;
+    margin: 10px auto;
+    height: 22px;
+    background-color: #444444;
+    display: none; /* Add flex display */
+    align-items: center; /* Center align the inner div vertically */
+}
+#progressBar div {
+    width: 100%;
+    height: 100%; /* Make the inner div take up full height */
+    background-color: #5f21f1;
+  }
+
+#boardContainer img{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#startButton{
+    background-color: #5f21f1; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

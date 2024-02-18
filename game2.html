@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyboard Event Listener for WASD Keys with JS Class</title>
+<style>
+body {
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(94, 94, 94);
+}
+
+#progressBar {
+    width: 90%;
+    margin: 10px auto;
+    height: 22px;
+    background-color: #444444;
+    display: none; /* Add flex display */
+    align-items: center; /* Center align the inner div vertically */
+}
+#progressBar div {
+    width: 100%;
+    height: 100%; /* Make the inner div take up full height */
+    background-color: #b60000;
+  }
+
+#boardContainer img{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+</style>
+</head>
+<body>
+    
+<div id="game">
+    <h2>Press WASD keys</h2>
+    <h2 id="score"></h2>
+    <div id="boardContainer"></div>
+    <div id="progressBar">
+        <div id="innerProgressBar"></div>
+    </div>
+    <button id="startButton">Start Game</button>
+</div>
+
+
+<script src ="game2.js"></script>
+
+</body>
+</html>
