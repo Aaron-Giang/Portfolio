@@ -42,6 +42,7 @@ logoImage.addEventListener('click', function() {
         setTimeout(function(){
             msg.innerHTML = ""
         },5000)
+        form.reset()
         console.log('Success!', response)
       })
         
