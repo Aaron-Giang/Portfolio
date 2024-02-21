@@ -7,7 +7,7 @@ class GameBoard{
         this.points = 0;
         this.maxTime = 15;
         this.time = this.maxTime;
-        this.timeIncrease = 2;
+        this.timeIncrease = 4;
         this.start = false;
         this.keydownEventListener = this.handleKeydown.bind(this);
         this.interval = setInterval(() => {
@@ -156,7 +156,7 @@ class GameBoard{
                 this.reset();
             }
 
-            this.time -= 0.01;
+            this.time -= 0.015;
             var innerProgressBar = document.getElementById('innerProgressBar');
             if(this.time > this.maxTime){
                 this.time = this.maxTime;

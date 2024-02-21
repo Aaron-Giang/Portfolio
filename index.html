@@ -6,7 +6,6 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href = "style.css">
     <link rel="icon" type="image/x-icon" href="/images/logo4.png">
-
 </head>
 <body>
 <!-----------Header----------------->
@@ -17,10 +16,10 @@
             <img src = "images/logo4.png" id ="logo">
             
             <ul>
-                <li> <a href="#">Home</a> </li>
-                <li> <a href="#">About</a> </li>
-                <li> <a href="#">Projects</a> </li>
-                <li> <a href="#">Contact</a> </li>
+                <li> <a href="#header">Home</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#portfolio">Projects</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
                 
             </ul>
         </nav>
@@ -28,14 +27,14 @@
     
     <div class="container">
         <nav>
-            <img src = "images/ronald.gif" id ="portrait">
-
-
+            
+            
             <div class = "header-text">
                 <h1>Aaron Giang</h1>
                 <p>Software Engineering Student</p>
-
+                
             </div>
+            <img src = "" id ="portrait">
         </nav>
     </div>
 
@@ -53,17 +52,9 @@
 
             <div class = "about-col-2">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                    eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Amet nisl purus in mollis. Volutpat 
-                    lacus laoreet non curabitur gravida arcu. Aliquam 
-                    malesuada bibendum arcu vitae elementum. Dignissim 
-                    convallis aenean et tortor at risus viverra adipiscing 
-                    at. Quisque id diam vel quam elementum pulvinar etiam non 
-                    quam. Interdum consectetur libero id faucibus nisl tincidunt 
-                    eget. Quam quisque id diam vel quam elementum. Facilisis sed odio
-                     morbi quis commodo odio aenean sed.
-                     Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
+                    Hello! I'm Aaron Giang, a passionate Software Engineer and Programmer.
+                    Outside of software, you'll find me at the gym, working on music or building model kits
+                       . I invite you to explore my portfolio and discover how I can contribute to your next project.
                 </p>
 
                 <div class = "tab-titles"> 
@@ -77,16 +68,22 @@
 
                 <div class="tab-contents active-tab" id="languages">
                     <ul>
-                        <li><span>Python</span><br>Designing web/app</li>
-                        <li><span>C/C++/C#</span><br>Designing web/app</li>
+                        <li> <img src="images/python_icon.png"/> <span>Python</span><br></li>
+                        <li> <img src="images/c_icon.png"/> <span>C</span><br></li>
+                        <li> <img src="images/c++_icon.png"/> <span>C++</span><br></li>
+                        <li> <img src="images/csharp_icon.png"/> <span>C#</span><br></li>
                     </ul>
                     <ul>
-                        <li><span>Python</span><br>Designing web/app</li>
-                        <li><span>C/C++/C#</span><br>Designing web/app</li>
-                    </ul>                    <ul>
-                        <li><span>Python</span><br>Designing web/app</li>
-                        <li><span>C/C++/C#</span><br>Designing web/app</li>
+                        <li> <img src="images/java_icon.png"/> <span>Java</span><br></li>
+                        <li> <img src="images/html_icon.png"/> <span>HTML</span><br></li>
+                        <li> <img src="images/css_icon.png"/> <span>CSS</span><br></li>
+                        <li> <img src="images/js_icon.png"/> <span>Java Script</span><br></li>
                     </ul>
+                    <ul>
+                        <li> <img src="images/sql_icon.png"/> <span>SQL</span><br></li>
+
+                    </ul>
+
                     
 
                 </div>
@@ -94,10 +91,12 @@
 
                 <div class="tab-contents " id ='frameworks'>
                     <ul>
-
-                        <li><span>UI/UX</span><br>Designing web/app</li>
-                        <li><span>UI/UX</span><br>Designing web/app</li>
+                        <li> <img src="images/react_icon.png"/> <span>React JS</span><br></li>
+                        <li> <img src="images/lambda.png"/> <span>AWS Lambda</span><br></li>
+                        <li> <img src="images/db_icon.png"/> <span>AWS DynamoDB</span><br></li>
+                        <li> <img src="images/terraform_icon.png"/> <span>Terraform</span><br></li>
                     </ul>
+   
 
                 </div>
 <!-----------Education info----------------->
@@ -105,9 +104,27 @@
                 <div class="tab-contents " id = 'education'>
                     <ul>
 
-                        <li><span>UI/UX</span><br>Designing web/app</li>
-                        <li><span>UI/UX</span><br>Designing web/app</li>
+                        <li> <img src="images/uofc_icon.png"/> <span>University of Calgary</span>
+                            <br>2021 - Present
+                            <br>Software Engineering
+                        </li>
+                        <li><span>Courses</span>
+                            <ul class="course-list">
+                                <li>Full Stack</li>
+                                <li>Object Oriented Programming </li>
+                                <li>Data Structures and Algorithms</li>
+                                <li>Network Systems</li>
+                                <li>Software Architecture</li>
+                                <li>Machine Learning</li>
+                                <li>Software Testing</li>
+                                <li>Applied Operating Systems</li>
+                                <li>Principles of Software Design</li>
+                            </ul>
+                            
+                        </li>
+                        
                     </ul>
+                    
 
                 </div>
 
@@ -208,14 +225,16 @@
                         <img src="images/git-icon.png"></a>
 
                 </div>
+                <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message (1000 characters max)" maxlength="1000"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -245,3 +264,5 @@
 </body>
 
 </html>
+
+

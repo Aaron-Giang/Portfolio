@@ -9,7 +9,9 @@ body{
     background: #202020;
     color: #d1d2d0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 #header{
     width: 100%;
     height: 100vh;
@@ -148,13 +150,18 @@ nav ul li a:hover::after{
 
 .tab-contents ul li {
     list-style: none;
-    margin: 10px 0 ;
     font-size: large;
+    padding: .5em;
 }
 .tab-contents ul li span {
-    color: #5f21f1;
-    font-size: xx-large;
-
+    color: #ffffff;
+    font-size: 2.7em;
+}
+.tab-contents ul li img{
+    width: 4em; /* You can adjust the width as needed */
+    height: 4em; /* You can adjust the height as needed */
+    margin-bottom: -.5em;
+    margin-right: 0.1em; /* Adjust the spacing between the icon and text */
 }
 
 .tab-contents{
@@ -167,6 +174,20 @@ nav ul li a:hover::after{
 .tab-contents.active-tab ul{
     padding: 10px;
 }
+
+.course-list {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+}
+
+.course-list li {
+    break-inside: avoid-column;
+    padding-left: 20px; /* Add some padding for better readability */
+}
+
 
 
 /*------------portfolio------------*/
@@ -236,6 +257,7 @@ nav ul li a:hover::after{
 .social-icons img{
     height: 48px;
     width: 48px;
+    padding:2px;
 }
 
 
@@ -256,7 +278,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p {
-    color: #5f21f1;
+    color: #d1d2d0;
     margin-right: 15;
     font-size: 25px;
 }
@@ -267,7 +289,49 @@ nav ul li a:hover::after{
 }
 
 .social-icons img:hover{
+    transition: .5s;
     transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background-color: #5f21f1;
+    padding: 1em;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #d1d2d0;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.btn.btn2:hover{
+    background-color: #444444;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #727272;
+    padding: 15px;
+    margin: 15px 0;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+    resize: none;
+}
+form input, form ::placeholder{
+    color: #444444;
+}
+
+#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
 }
 
 /*------------game------------*/
@@ -280,7 +344,7 @@ nav ul li a:hover::after{
 
 #progressBar {
     width: 90%;
-    margin: 10px auto;
+    margin: 20px auto;
     height: 22px;
     background-color: #444444;
     display: none; /* Add flex display */
@@ -310,4 +374,10 @@ nav ul li a:hover::after{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+
+/*------------small screen------------*/
+@media only screen and(max-with:600px) {
+
 }

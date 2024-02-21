@@ -29,3 +29,28 @@ const gameDiv = document.getElementById('game');
 logoImage.addEventListener('click', function() {
     gameDiv.style.display = "block";
 });
+
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwQvOxKCwe6nn3DkSp7H2nGCwNaq48jHC0KeB1LDfKH8qqRS8hMel8Yn8sUUcwzdkVDZQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        console.log('Success!', response)
+      })
+        
+      .catch(error =>{
+        msg.innerHTML = "ERROR: Message was not sent"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        console.error('Error!', error.message)
+      }
+        )
+  })
